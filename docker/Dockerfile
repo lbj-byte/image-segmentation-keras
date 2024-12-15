@@ -34,6 +34,6 @@ ENV CONDA_AUTO_UPDATE_CONDA=false
 RUN conda install -y ipython tensorflow-gpu=1.14.0 keras=2.3.1
 
 # install model library
-RUN git clone https://github.com/divamgupta/image-segmentation-keras.git
+RUN git clone https://github.com/lbj-byte/image-segmentation-keras.git
 WORKDIR /image-segmentation-keras
 RUN python setup.py install
