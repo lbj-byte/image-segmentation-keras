@@ -7,6 +7,8 @@ if sys.version_info.major < 3:
     cv_ver = "<=4.2.0.32" 
     keras_ver = "<=2.3.0"
 
+print(packages=find_packages(exclude=["test"]))
+
 setup(
     name="keras_segmentation",
     version="0.3.0",
